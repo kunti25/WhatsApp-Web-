@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: hwb(33 85% 7%);
+    border: 2px solid black;
+}
+
+.top {
+    background-color: rgb(2, 38, 36);
+    color: white;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 10px;
+    min-height: 35%;
+    width: 90%;
+}
+
+@media(man-width:768px) {
+    .top {
+        margin: 20px;
+        height: auto;
+    }
+}
+
+.top-card h1 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.Free {
+    background: #1aa36f;
+    color: white;
+    padding: 4px 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: 60px;
+}
+
+.web {
+    margin-top: 20px;
+    color: #1aa36f;
+}
+
+.level {
+    margin-top: 10px;
+}
+
+.hours {
+    margin: 8px 0;
+}
+
+
+.skills {
+    margin-top: 15px;
+}
+
+.skills span {
+    border: 3px solid #1aa36f;
+    padding: 5px 10px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 50px;
+}
+
+@media(max-width:768px) {
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.round {
+    background: rgb(2, 85, 81);
+    color: white;
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    padding: 30px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media(max-width:768) {
+    .round {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+.round small {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.round p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.btn-area {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+
+}
+
+@media(max-width:768px) {
+    .btn-area {
+        justify-content: center;
+    }
+}
+
+.btn-area button {
+    background: rgb(2, 38, 36);
+    border: lightcoral;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    margin: 5px;
+    position: relative;
+    bottom: 60px;
+    left: 200%;
+}
+
+.footer {
+    background-color: lightgreen;
+    height: 15vh;
+    display: flex;
+    justify-content: space-evenly;
+}
